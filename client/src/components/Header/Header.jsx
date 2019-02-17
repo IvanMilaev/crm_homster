@@ -16,19 +16,22 @@ import Button from "components/CustomButtons/Button";
 import headerStyle from "assets/jss/material-dashboard-react/components/headerStyle.jsx";
 
 function Header({ ...props }) {
+
   function makeBrand() {
     var name;
     props.routes.map((prop, key) => {
       if (prop.path === props.location.pathname) {
         name = prop.navbarName;
       }
-      if (name == undefined) {
-        prop.nestedRoutes.map((pr, k) => {
-          if(pr.path === props.location.pathname) {
-            name = pr.name;
-          }
-        })
-      }
+
+      // if (name === undefined) {
+      //   console.log('почему мы здесь?')
+      //   prop.nestedRoutes.map((pr, k) => {
+      //     if(pr.path === props.location.pathname) {
+      //       name = pr.name;
+      //     }
+      //   })
+      // }
       return null;
     });
     return name;

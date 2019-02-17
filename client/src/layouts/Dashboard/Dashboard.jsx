@@ -18,9 +18,9 @@ import dashboardStyle from "assets/jss/material-dashboard-react/layouts/dashboar
 
 import image from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/reactlogo.png";
-import "./chartist.css"
+import "assets/css/chartist.css"
 
-console.log('dashboardRoutes',dashboardRoutes)
+
 
 const switchRoutes = (
   <Switch>

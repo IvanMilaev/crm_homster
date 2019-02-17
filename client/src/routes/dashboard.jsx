@@ -17,6 +17,7 @@ import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
 
+import LoginPage from "containers/login"
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -24,6 +25,13 @@ const dashboardRoutes = [
     navbarName: "Material Dashboard",
     icon: Dashboard,
     component: DashboardPage
+  },
+  {
+    path: "/login",
+    sidebarName: "Login",
+    navbarName: "Login Page",
+    icon: Dashboard,
+    component: LoginPage
   },
   {
     path: "/user",
