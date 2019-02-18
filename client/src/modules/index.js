@@ -1,8 +1,9 @@
-import { combineReducers } from 'redux'
-import { connectRouter } from 'connected-react-router'
-import counter from './counter'
+import { combineReducers } from "redux";
+import { connectRouter } from "connected-react-router";
+import auth from "./auth";
 
-export default (history) => combineReducers({
-  counter,
-  router: connectRouter(history)
-})
+export default history =>
+  combineReducers({
+    auth,
+    router: connectRouter(history)
+  });

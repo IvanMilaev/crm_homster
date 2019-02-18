@@ -1,134 +1,158 @@
-import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 
 import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
-import TextField from "@material-ui/core/TextField"
+import TextField from "@material-ui/core/TextField";
 
 // core components
-
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
-import CardIcon from "components/Card/CardIcon.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-
-import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
+//actions
 import logo from "assets/img/logo_full_blue.png";
 
+import { loginUser } from "modules/auth";
+
 const style = theme => ({
-  loginCard : {
+  loginCard: {
     minWidth: 200,
     marginTop: "40%"
   },
   root: {
-   flexGrow: 1,
- },
- header: {
-   backgroundColor: 'red'
- },
- img: {
-   marginTop: 30,
-   marginBottom: 30,
- },
- textField: {
-
- }
-})
-
+    flexGrow: 1
+  },
+  header: {
+    backgroundColor: "red"
+  },
+  img: {
+    marginTop: 30,
+    marginBottom: 30
+  },
+  textField: {}
+});
 
 class LoginPage extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super();
+    this.state = {
+      email: "",
+      password: "",
+      errors: {}
+    };
+  }
 
-        // reset login status
-        //this.props.dispatch(userActions.logout());
-
-        this.state = {
-            username: '',
-            password: '',
-            submitted: false
-        };
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push("/dashboard"); // push user to dashboard when they login
     }
-
-    handleChange(e) {
-        const { name, value } = e.target;
-        this.setState({ [name]: value });
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
     }
+  }
 
-    handleSubmit(e) {
-        e.preventDefault();
-
-        this.setState({ submitted: true });
-        //const { username, password } = this.state;
-        //const { dispatch } = this.props;
-        // if (username && password) {
-        //     dispatch(userActions.login(username, password));
-        // }
+  componentDidMount() {
+    // If logged in and user navigates to Login page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
     }
+  }
 
-    render() {
-        const { loggingIn, classes } = this.props;
-        const { username, password, submitted } = this.state;
-        return (
-          <GridContainer className={classes.root}>
-            <GridItem xs={12}>
-                <GridContainer
-                  direction="row"
-                  justify="center"
-                  alignItems="center"
-                >
-                  <GridItem >
-                    <Card className={classes.loginCard}>
-                         <CardHeader color="primary" align="center" >
+  handleChange = e => {
+    this.setState({ [e.target.id]: e.target.value });
+  };
 
-                          <img src={logo} alt="logo" className={classes.img} />
-                         </CardHeader>
-                         <CardBody >
-                         <form>
-                         <TextField
-                            id="username"
-                            name="username"
-                            label="Логин"
-                            className={classes.textField}
-                            value={this.state.username}
-                            onChange={this.handleChange}
-                            margin="normal"
-                            fullWidth
-                          />
-                          <TextField
-                             id="password"
-                             name="password"
-                             label="Пароль"
-                             className={classes.textField}
-                             value={this.state.password}
-                             onChange={this.handleChange}
-                             margin="normal"
-                             type="password"
-                             fullWidth
-                           />
-                           </form>
+  onSubmit = e => {
+    e.preventDefault();
+    const userData = {
+      email: this.state.email,
+      password: this.state.password
+    };
+    this.props.loginUser(userData); // since we handle the redirect within our component, we don't need to pass in this.props.history as a parameter
+  };
 
-                         </CardBody>
-                         <CardBody align="center">
-                         <Button color="primary" simple onClick={this.handleSubmit}>Войти в систему</Button>
-                         </CardBody>
-
-                       </Card>
-                     </GridItem>
-                  </GridContainer>
-              </GridItem>
-            </GridContainer>
-        );
-    }
+  render() {
+    const { classes } = this.props;
+    const { errors } = this.state;
+    return (
+      <GridContainer className={classes.root}>
+        <GridItem xs={12}>
+          <GridContainer direction="row" justify="center" alignItems="center">
+            <GridItem>
+              <Card className={classes.loginCard}>
+                <CardHeader color="primary" align="center">
+                  <img src={logo} alt="logo" className={classes.img} />
+                </CardHeader>
+                <form noValidate onSubmit={this.onSubmit}>
+                  <CardBody>
+                    <TextField
+                      id="email"
+                      name="email"
+                      label="email"
+                      error={errors.email}
+                      className={classes.textField}
+                      value={this.state.username}
+                      onChange={this.handleChange}
+                      margin="normal"
+                      type="email"
+                      fullWidth
+                    />
+                    <TextField
+                      id="password"
+                      name="password"
+                      label="password"
+                      error={errors.password}
+                      className={classes.textField}
+                      value={this.state.password}
+                      onChange={this.handleChange}
+                      margin="normal"
+                      type="password"
+                      fullWidth
+                    />
+                  </CardBody>
+                  <CardBody align="center">
+                    <Button color="primary" simple type="submit">
+                      Войти в систему
+                    </Button>
+                  </CardBody>
+                </form>
+              </Card>
+            </GridItem>
+          </GridContainer>
+        </GridItem>
+      </GridContainer>
+    );
+  }
 }
 
-export default withStyles(style)(LoginPage)
+LoginPage.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(
+    {
+      loginUser
+    },
+    dispatch
+  );
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withStyles(style)(LoginPage));
