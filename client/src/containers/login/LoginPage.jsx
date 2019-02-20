@@ -18,7 +18,11 @@ import Button from "components/CustomButtons/Button.jsx";
 //actions
 import logo from "assets/img/logo_full_blue.png";
 
+//actions
 import { loginUser } from "modules/auth";
+
+//utils
+const empty = require("is-empty");
 
 const style = theme => ({
   loginCard: {
@@ -98,7 +102,11 @@ class LoginPage extends Component {
                       id="email"
                       name="email"
                       label="email"
-                      error={errors.email}
+                      variant="outlined"
+                      helperText={errors.email || errors.emailnotfound}
+                      error={
+                        !empty(errors.email) || !empty(errors.emailnotfound)
+                      }
                       className={classes.textField}
                       value={this.state.username}
                       onChange={this.handleChange}
@@ -110,7 +118,12 @@ class LoginPage extends Component {
                       id="password"
                       name="password"
                       label="password"
-                      error={errors.password}
+                      variant="outlined"
+                      helperText={errors.password || errors.passwordincorrect}
+                      error={
+                        !empty(errors.password) ||
+                        !empty(errors.passwordincorrect)
+                      }
                       className={classes.textField}
                       value={this.state.password}
                       onChange={this.handleChange}
