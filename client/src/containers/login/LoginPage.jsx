@@ -82,6 +82,7 @@ class LoginPage extends Component {
   render() {
     const { classes } = this.props;
     const { errors } = this.state;
+    console.log(this.props);
     return (
       <GridContainer className={classes.root}>
         <GridItem xs={12}>

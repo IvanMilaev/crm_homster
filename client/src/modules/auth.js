@@ -2,9 +2,7 @@ import axios from "axios";
 import setAuthToken from "utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 
-const GET_ERRORS = "GET_ERRORS";
-const USER_LOADING = "USER_LOADING";
-const SET_CURRENT_USER = "SET_CURRENT_USER";
+import { GET_ERRORS, USER_LOADING, SET_CURRENT_USER } from "./types";
 
 const isEmpty = require("is-empty");
 
