@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
@@ -15,7 +14,7 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-//actions
+//some design asset
 import logo from "assets/img/logo_full_blue.png";
 
 //actions
@@ -54,7 +53,7 @@ class LoginPage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/dashboard"); // push user to dashboard when they login
+      this.props.history.push("/crm"); // push user to dashboard when they login
     }
     if (nextProps.errors) {
       this.setState({
@@ -66,7 +65,7 @@ class LoginPage extends Component {
   componentDidMount() {
     // If logged in and user navigates to Login page, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
+      this.props.history.push("/crm");
     }
   }
 
@@ -86,7 +85,6 @@ class LoginPage extends Component {
   render() {
     const { classes } = this.props;
     const { errors } = this.state;
-    console.log(this.props);
     return (
       <GridContainer className={classes.root}>
         <GridItem xs={12}>

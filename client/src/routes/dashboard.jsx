@@ -17,24 +17,16 @@ import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
 
-import LoginPage from "containers/login"
 const dashboardRoutes = [
   {
-    path: "/dashboard",
+    path: "/crm/dashboard",
     sidebarName: "Dashboard",
     navbarName: "Material Dashboard",
     icon: Dashboard,
     component: DashboardPage
   },
   {
-    path: "/login",
-    sidebarName: "Login",
-    navbarName: "Login Page",
-    icon: Dashboard,
-    component: LoginPage
-  },
-  {
-    path: "/user",
+    path: "/crm/user",
     sidebarName: "User Profile",
     navbarName: "Profile",
     icon: Person,
@@ -82,7 +74,7 @@ const dashboardRoutes = [
     icon: Unarchive,
     component: UpgradeToPro
   },
-  { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
+  { redirect: true, path: "/crm", to: "/crm/dashboard", navbarName: "Redirect" }
 ];
 
 export default dashboardRoutes;
