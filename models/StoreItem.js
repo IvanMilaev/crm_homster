@@ -14,6 +14,7 @@ const StoreItemSchema = new Schema({
   quantity: Float,
   price: Float,
   loss: Float,
+  minlim: Float,
   is_active: Boolean,
   about: String
 });
