@@ -1,0 +1,1360 @@
+[
+  {
+    "_id": 1,
+    "cCode": 1000,
+    "cName": "RAL 9016 (Белый)",
+    "cNumb": 20,
+    "cGrup": 1
+  },
+  {
+    "_id": 2,
+    "cCode": 1099,
+    "cName": "Неокрашенный",
+    "cNumb": 19,
+    "cGrup": 1
+  },
+  {
+    "_id": 3,
+    "cCode": 2001,
+    "cName": "RAL 9006 (серый)",
+    "cNumb": 27,
+    "cGrup": 2
+  },
+  {
+    "_id": 4,
+    "cCode": 2002,
+    "cName": "RAL 8017 (коричневый)",
+    "cNumb": 25,
+    "cGrup": 2
+  },
+  {
+    "_id": 5,
+    "cCode": 2003,
+    "cName": "RAL 9016",
+    "cNumb": 47,
+    "cGrup": 2
+  },
+  {
+    "_id": 6,
+    "cCode": 3002,
+    "cName": "Прозрачный",
+    "cNumb": 7,
+    "cGrup": 3
+  },
+  {
+    "_id": 7,
+    "cCode": 3003,
+    "cName": "___",
+    "cNumb": 32,
+    "cGrup": 3
+  },
+  {
+    "_id": 8,
+    "cCode": 3004,
+    "cName": "ПУСТОТА",
+    "cNumb": 33,
+    "cGrup": 3
+  },
+  {
+    "_id": 9,
+    "cCode": 3005,
+    "cName": "бронзовый",
+    "cNumb": 39,
+    "cGrup": 3
+  },
+  {
+    "_id": 10,
+    "cCode": 3006,
+    "cName": "серый",
+    "cNumb": 40,
+    "cGrup": 3
+  },
+  {
+    "_id": 11,
+    "cCode": 3007,
+    "cName": "голубой",
+    "cNumb": 41,
+    "cGrup": 3
+  },
+  {
+    "_id": 12,
+    "cCode": 3008,
+    "cName": "Матовое",
+    "cNumb": 58,
+    "cGrup": 3
+  },
+  {
+    "_id": 13,
+    "cCode": 3009,
+    "cName": "Тонировка",
+    "cNumb": 62,
+    "cGrup": 3
+  },
+  {
+    "_id": 14,
+    "cCode": 3010,
+    "cName": "Армированное(Польша)",
+    "cNumb": 67,
+    "cGrup": 3
+  },
+  {
+    "_id": 15,
+    "cCode": 4001,
+    "cName": "белый",
+    "cNumb": 2,
+    "cGrup": 4
+  },
+  {
+    "_id": 16,
+    "cCode": 4002,
+    "cName": "черный",
+    "cNumb": 3,
+    "cGrup": 4
+  },
+  {
+    "_id": 17,
+    "cCode": 4003,
+    "cName": "_",
+    "cNumb": 4,
+    "cGrup": 4
+  },
+  {
+    "_id": 18,
+    "cCode": 4004,
+    "cName": "золотой",
+    "cNumb": 8,
+    "cGrup": 4
+  },
+  {
+    "_id": 19,
+    "cCode": 4004,
+    "cName": "св. бронза",
+    "cNumb": 10,
+    "cGrup": 4
+  },
+  {
+    "_id": 20,
+    "cCode": 4005,
+    "cName": "коричневый",
+    "cNumb": 9,
+    "cGrup": 4
+  },
+  {
+    "_id": 21,
+    "cCode": 4007,
+    "cName": "Серебро",
+    "cNumb": 11,
+    "cGrup": 4
+  },
+  {
+    "_id": 22,
+    "cCode": 4008,
+    "cName": "Новое серебро",
+    "cNumb": 12,
+    "cGrup": 4
+  },
+  {
+    "_id": 23,
+    "cCode": 4009,
+    "cName": "Титан матовый",
+    "cNumb": 13,
+    "cGrup": 4
+  },
+  {
+    "_id": 24,
+    "cCode": 4010,
+    "cName": "Серый",
+    "cNumb": 15,
+    "cGrup": 4
+  },
+  {
+    "_id": 25,
+    "cCode": 4011,
+    "cName": "Светлый мрамор",
+    "cNumb": 35,
+    "cGrup": 4
+  },
+  {
+    "_id": 26,
+    "cCode": 4012,
+    "cName": "Золотой дуб",
+    "cNumb": 36,
+    "cGrup": 4
+  },
+  {
+    "_id": 27,
+    "cCode": 4013,
+    "cName": "Махагони",
+    "cNumb": 37,
+    "cGrup": 4
+  },
+  {
+    "_id": 28,
+    "cCode": 4014,
+    "cName": "Светлый дуб",
+    "cNumb": 38,
+    "cGrup": 4
+  },
+  {
+    "_id": 29,
+    "cCode": 4015,
+    "cName": "@АвтоПодборЪ",
+    "cNumb": 44,
+    "cGrup": 4
+  },
+  {
+    "_id": 30,
+    "cCode": 4016,
+    "cName": "Нержавеющая сталь",
+    "cNumb": 51,
+    "cGrup": 4
+  },
+  {
+    "_id": 31,
+    "cCode": 4017,
+    "cName": "Мат. Нержавейка",
+    "cNumb": 60,
+    "cGrup": 4
+  },
+  {
+    "_id": 32,
+    "cCode": 5001,
+    "cName": "Белый",
+    "cNumb": 1,
+    "cGrup": 5
+  },
+  {
+    "_id": 33,
+    "cCode": 5002,
+    "cName": "Коричневый",
+    "cNumb": 6,
+    "cGrup": 5
+  },
+  {
+    "_id": 34,
+    "cCode": 5003,
+    "cName": "Карамельный",
+    "cNumb": 14,
+    "cGrup": 5
+  },
+  {
+    "_id": 35,
+    "cCode": 6001,
+    "cName": "золотой дуб",
+    "cNumb": 16,
+    "cGrup": 6
+  },
+  {
+    "_id": 36,
+    "cCode": 6002,
+    "cName": "махагони",
+    "cNumb": 17,
+    "cGrup": 6
+  },
+  {
+    "_id": 37,
+    "cCode": 6003,
+    "cName": "дуб темный",
+    "cNumb": 18,
+    "cGrup": 6
+  },
+  {
+    "_id": 38,
+    "cCode": 6004,
+    "cName": "натуральный дуб",
+    "cNumb": 175,
+    "cGrup": 6
+  },
+  {
+    "_id": 39,
+    "cCode": 7001,
+    "cName": "DECOR 73",
+    "cNumb": 29,
+    "cGrup": 7
+  },
+  {
+    "_id": 40,
+    "cCode": 7002,
+    "cName": "DECOR 39",
+    "cNumb": 45,
+    "cGrup": 7
+  },
+  {
+    "_id": 41,
+    "cCode": 7003,
+    "cName": "DECOR 6/12",
+    "cNumb": 46,
+    "cGrup": 7
+  },
+  {
+    "_id": 42,
+    "cCode": 7004,
+    "cName": "DECOR",
+    "cNumb": 183,
+    "cGrup": 7
+  },
+  {
+    "_id": 43,
+    "cCode": 8001,
+    "cName": "__",
+    "cNumb": 5,
+    "cGrup": 8
+  },
+  {
+    "_id": 44,
+    "cCode": 9001,
+    "cName": "RAL 5005",
+    "cNumb": 21,
+    "cGrup": 9
+  },
+  {
+    "_id": 45,
+    "cCode": 9002,
+    "cName": "RAL 9007",
+    "cNumb": 28,
+    "cGrup": 9
+  },
+  {
+    "_id": 46,
+    "cCode": 9003,
+    "cName": "RAL 7037",
+    "cNumb": 23,
+    "cGrup": 9
+  },
+  {
+    "_id": 47,
+    "cCode": 9004,
+    "cName": "RAL 6029",
+    "cNumb": 22,
+    "cGrup": 9
+  },
+  {
+    "_id": 48,
+    "cCode": 9005,
+    "cName": "RAL 9003",
+    "cNumb": 26,
+    "cGrup": 9
+  },
+  {
+    "_id": 49,
+    "cCode": 9006,
+    "cName": "RAL 8014",
+    "cNumb": 24,
+    "cGrup": 9
+  },
+  {
+    "_id": 50,
+    "cCode": 9007,
+    "cName": "RAL 1019",
+    "cNumb": 48,
+    "cGrup": 9
+  },
+  {
+    "_id": 51,
+    "cCode": 9008,
+    "cName": "RAL 7047",
+    "cNumb": 49,
+    "cGrup": 9
+  },
+  {
+    "_id": 52,
+    "cCode": 9009,
+    "cName": "RAL 7035",
+    "cNumb": 50,
+    "cGrup": 9
+  },
+  {
+    "_id": 53,
+    "cCode": 9010,
+    "cName": "RAL 8019",
+    "cNumb": 52,
+    "cGrup": 9
+  },
+  {
+    "_id": 54,
+    "cCode": 9011,
+    "cName": "RAL 8015",
+    "cNumb": 53,
+    "cGrup": 9
+  },
+  {
+    "_id": 55,
+    "cCode": 9012,
+    "cName": "RAL 7045",
+    "cNumb": 54,
+    "cGrup": 9
+  },
+  {
+    "_id": 56,
+    "cCode": 9013,
+    "cName": "RAL 7004",
+    "cNumb": 55,
+    "cGrup": 9
+  },
+  {
+    "_id": 57,
+    "cCode": 9014,
+    "cName": "RAL 9005",
+    "cNumb": 56,
+    "cGrup": 9
+  },
+  {
+    "_id": 58,
+    "cCode": 9015,
+    "cName": "RAL 7022",
+    "cNumb": 57,
+    "cGrup": 9
+  },
+  {
+    "_id": 59,
+    "cCode": 9016,
+    "cName": "RAL 7040",
+    "cNumb": 59,
+    "cGrup": 9
+  },
+  {
+    "_id": 60,
+    "cCode": 9017,
+    "cName": "RAL 7012",
+    "cNumb": 61,
+    "cGrup": 9
+  },
+  {
+    "_id": 61,
+    "cCode": 9018,
+    "cName": "RAL 7013",
+    "cNumb": 63,
+    "cGrup": 9
+  },
+  {
+    "_id": 62,
+    "cCode": 9019,
+    "cName": "RAL 6018",
+    "cNumb": 64,
+    "cGrup": 9
+  },
+  {
+    "_id": 63,
+    "cCode": 9020,
+    "cName": "RAL 7015",
+    "cNumb": 65,
+    "cGrup": 9
+  },
+  {
+    "_id": 64,
+    "cCode": 9021,
+    "cName": "RAL 7048",
+    "cNumb": 66,
+    "cGrup": 9
+  },
+  {
+    "_id": 65,
+    "cCode": 9022,
+    "cName": "RAL 1011",
+    "cNumb": 68,
+    "cGrup": 9
+  },
+  {
+    "_id": 66,
+    "cCode": 9023,
+    "cName": "RAL 1001",
+    "cNumb": 69,
+    "cGrup": 9
+  },
+  {
+    "_id": 67,
+    "cCode": 9024,
+    "cName": "RAL 7039",
+    "cNumb": 70,
+    "cGrup": 9
+  },
+  {
+    "_id": 68,
+    "cCode": 9025,
+    "cName": "RAL 5015",
+    "cNumb": 71,
+    "cGrup": 9
+  },
+  {
+    "_id": 69,
+    "cCode": 9026,
+    "cName": "RAL 3020",
+    "cNumb": 72,
+    "cGrup": 9
+  },
+  {
+    "_id": 70,
+    "cCode": 9027,
+    "cName": "RAL 8003",
+    "cNumb": 73,
+    "cGrup": 9
+  },
+  {
+    "_id": 71,
+    "cCode": 9028,
+    "cName": "RAL 6022",
+    "cNumb": 74,
+    "cGrup": 9
+  },
+  {
+    "_id": 72,
+    "cCode": 9029,
+    "cName": "RAL 8008",
+    "cNumb": 75,
+    "cGrup": 9
+  },
+  {
+    "_id": 73,
+    "cCode": 9030,
+    "cName": "RAL 8016",
+    "cNumb": 76,
+    "cGrup": 9
+  },
+  {
+    "_id": 74,
+    "cCode": 9031,
+    "cName": "RAL 8028",
+    "cNumb": 77,
+    "cGrup": 9
+  },
+  {
+    "_id": 75,
+    "cCode": 9032,
+    "cName": "RAL 8011",
+    "cNumb": 78,
+    "cGrup": 9
+  },
+  {
+    "_id": 76,
+    "cCode": 9033,
+    "cName": "RAL 2010",
+    "cNumb": 79,
+    "cGrup": 9
+  },
+  {
+    "_id": 77,
+    "cCode": 9034,
+    "cName": "RAL 5017",
+    "cNumb": 80,
+    "cGrup": 9
+  },
+  {
+    "_id": 78,
+    "cCode": 9035,
+    "cName": "RAL 6019",
+    "cNumb": 81,
+    "cGrup": 9
+  },
+  {
+    "_id": 79,
+    "cCode": 9036,
+    "cName": "RAL 3005",
+    "cNumb": 82,
+    "cGrup": 9
+  },
+  {
+    "_id": 80,
+    "cCode": 9037,
+    "cName": "RAL 4005",
+    "cNumb": 83,
+    "cGrup": 9
+  },
+  {
+    "_id": 81,
+    "cCode": 9038,
+    "cName": "RAL 9022",
+    "cNumb": 84,
+    "cGrup": 9
+  },
+  {
+    "_id": 82,
+    "cCode": 9039,
+    "cName": "RAL 7042",
+    "cNumb": 85,
+    "cGrup": 9
+  },
+  {
+    "_id": 83,
+    "cCode": 9040,
+    "cName": "RAL 7016",
+    "cNumb": 86,
+    "cGrup": 9
+  },
+  {
+    "_id": 84,
+    "cCode": 9041,
+    "cName": "RAL 1015",
+    "cNumb": 87,
+    "cGrup": 9
+  },
+  {
+    "_id": 85,
+    "cCode": 9042,
+    "cName": "RAL 5014",
+    "cNumb": 88,
+    "cGrup": 9
+  },
+  {
+    "_id": 86,
+    "cCode": 9043,
+    "cName": "RAL 8000",
+    "cNumb": 89,
+    "cGrup": 9
+  },
+  {
+    "_id": 87,
+    "cCode": 9044,
+    "cName": "RAL 3009",
+    "cNumb": 90,
+    "cGrup": 9
+  },
+  {
+    "_id": 88,
+    "cCode": 9045,
+    "cName": "RAL 1002",
+    "cNumb": 91,
+    "cGrup": 9
+  },
+  {
+    "_id": 89,
+    "cCode": 9046,
+    "cName": "RAL 3004",
+    "cNumb": 145,
+    "cGrup": 9
+  },
+  {
+    "_id": 90,
+    "cCode": 9047,
+    "cName": "RAL 8001",
+    "cNumb": 146,
+    "cGrup": 9
+  },
+  {
+    "_id": 91,
+    "cCode": 9048,
+    "cName": "RAL 3007",
+    "cNumb": 149,
+    "cGrup": 9
+  },
+  {
+    "_id": 92,
+    "cCode": 9049,
+    "cName": "RAL 2004",
+    "cNumb": 150,
+    "cGrup": 9
+  },
+  {
+    "_id": 93,
+    "cCode": 9050,
+    "cName": "RAL 9010",
+    "cNumb": 153,
+    "cGrup": 9
+  },
+  {
+    "_id": 94,
+    "cCode": 9051,
+    "cName": "RAL 5007",
+    "cNumb": 159,
+    "cGrup": 9
+  },
+  {
+    "_id": 95,
+    "cCode": 9052,
+    "cName": "RAL 5011",
+    "cNumb": 160,
+    "cGrup": 9
+  },
+  {
+    "_id": 96,
+    "cCode": 9053,
+    "cName": "RAL 6026",
+    "cNumb": 161,
+    "cGrup": 9
+  },
+  {
+    "_id": 97,
+    "cCode": 9054,
+    "cName": "RAL 6005",
+    "cNumb": 162,
+    "cGrup": 9
+  },
+  {
+    "_id": 98,
+    "cCode": 9055,
+    "cName": "RAL 7024",
+    "cNumb": 166,
+    "cGrup": 9
+  },
+  {
+    "_id": 99,
+    "cCode": 9056,
+    "cName": "RAL 1024",
+    "cNumb": 167,
+    "cGrup": 9
+  },
+  {
+    "_id": 100,
+    "cCode": 9057,
+    "cName": "RAL 7046",
+    "cNumb": 168,
+    "cGrup": 9
+  },
+  {
+    "_id": 101,
+    "cCode": 9058,
+    "cName": "RAL 3003",
+    "cNumb": 169,
+    "cGrup": 9
+  },
+  {
+    "_id": 102,
+    "cCode": 9059,
+    "cName": "RAL 3000",
+    "cNumb": 170,
+    "cGrup": 9
+  },
+  {
+    "_id": 103,
+    "cCode": 9060,
+    "cName": "RAL 8025",
+    "cNumb": 173,
+    "cGrup": 9
+  },
+  {
+    "_id": 104,
+    "cCode": 9061,
+    "cName": "RAL 8002",
+    "cNumb": 182,
+    "cGrup": 9
+  },
+  {
+    "_id": 105,
+    "cCode": 9062,
+    "cName": "RAL 7044",
+    "cNumb": 184,
+    "cGrup": 9
+  },
+  {
+    "_id": 106,
+    "cCode": 9063,
+    "cName": "RAL 7030",
+    "cNumb": 186,
+    "cGrup": 9
+  },
+  {
+    "_id": 107,
+    "cCode": 9064,
+    "cName": "RAL 6008",
+    "cNumb": 188,
+    "cGrup": 9
+  },
+  {
+    "_id": 108,
+    "cCode": 9065,
+    "cName": "RAL 9004",
+    "cNumb": 190,
+    "cGrup": 9
+  },
+  {
+    "_id": 109,
+    "cCode": 9066,
+    "cName": "RAL 8029",
+    "cNumb": 191,
+    "cGrup": 9
+  },
+  {
+    "_id": 110,
+    "cCode": 9067,
+    "cName": "RAL 7001",
+    "cNumb": 192,
+    "cGrup": 9
+  },
+  {
+    "_id": 111,
+    "cCode": 9068,
+    "cName": "RAL 1023",
+    "cNumb": 193,
+    "cGrup": 9
+  },
+  {
+    "_id": 112,
+    "cCode": 10000,
+    "cName": "мореный дуб",
+    "cNumb": 30,
+    "cGrup": 10
+  },
+  {
+    "_id": 113,
+    "cCode": 10001,
+    "cName": "зиминий дуглас",
+    "cNumb": 31,
+    "cGrup": 10
+  },
+  {
+    "_id": 114,
+    "cCode": 10002,
+    "cName": "Натуральный дуб",
+    "cNumb": 174,
+    "cGrup": 10
+  },
+  {
+    "_id": 115,
+    "cCode": 11000,
+    "cName": "Темный дуб 1 (9638)",
+    "cNumb": 42,
+    "cGrup": 11
+  },
+  {
+    "_id": 116,
+    "cCode": 11001,
+    "cName": "Махагон (9632)",
+    "cNumb": 43,
+    "cGrup": 11
+  },
+  {
+    "_id": 117,
+    "cCode": 12000,
+    "cName": "---",
+    "cNumb": 92,
+    "cGrup": 12
+  },
+  {
+    "_id": 118,
+    "cCode": 12001,
+    "cName": "металл",
+    "cNumb": 107,
+    "cGrup": 12
+  },
+  {
+    "_id": 119,
+    "cCode": 12002,
+    "cName": "прозрачный",
+    "cNumb": 115,
+    "cGrup": 12
+  },
+  {
+    "_id": 120,
+    "cCode": 12003,
+    "cName": "оцинкованный",
+    "cNumb": 151,
+    "cGrup": 12
+  },
+  {
+    "_id": 121,
+    "cCode": 12004,
+    "cName": "Хром",
+    "cNumb": 155,
+    "cGrup": 12
+  },
+  {
+    "_id": 122,
+    "cCode": 12005,
+    "cName": "Бронза",
+    "cNumb": 156,
+    "cGrup": 12
+  },
+  {
+    "_id": 123,
+    "cCode": 12006,
+    "cName": "RAL",
+    "cNumb": 185,
+    "cGrup": 12
+  },
+  {
+    "_id": 124,
+    "cCode": 13000,
+    "cName": "Белый герметик",
+    "cNumb": 93,
+    "cGrup": 13
+  },
+  {
+    "_id": 125,
+    "cCode": 13001,
+    "cName": "Бесцветный герметик",
+    "cNumb": 94,
+    "cGrup": 13
+  },
+  {
+    "_id": 126,
+    "cCode": 13002,
+    "cName": "Коричневый герметик",
+    "cNumb": 95,
+    "cGrup": 13
+  },
+  {
+    "_id": 127,
+    "cCode": 14000,
+    "cName": "Белый сайдинг",
+    "cNumb": 96,
+    "cGrup": 14
+  },
+  {
+    "_id": 128,
+    "cCode": 14001,
+    "cName": "Серый сайдинг",
+    "cNumb": 97,
+    "cGrup": 14
+  },
+  {
+    "_id": 129,
+    "cCode": 14002,
+    "cName": "Светло-бежевый сайдинг",
+    "cNumb": 98,
+    "cGrup": 14
+  },
+  {
+    "_id": 130,
+    "cCode": 14003,
+    "cName": "Корица сайдинг",
+    "cNumb": 176,
+    "cGrup": 14
+  },
+  {
+    "_id": 131,
+    "cCode": 14004,
+    "cName": "Голубой лед сайдинг",
+    "cNumb": 177,
+    "cGrup": 14
+  },
+  {
+    "_id": 132,
+    "cCode": 14005,
+    "cName": "Слоновая кость сайдинг",
+    "cNumb": 194,
+    "cGrup": 14
+  },
+  {
+    "_id": 133,
+    "cCode": 15000,
+    "cName": "дуб коньячный",
+    "cNumb": 99,
+    "cGrup": 15
+  },
+  {
+    "_id": 134,
+    "cCode": 15001,
+    "cName": "дуб беленый",
+    "cNumb": 100,
+    "cGrup": 15
+  },
+  {
+    "_id": 135,
+    "cCode": 15002,
+    "cName": "ясень светлый",
+    "cNumb": 101,
+    "cGrup": 15
+  },
+  {
+    "_id": 136,
+    "cCode": 15003,
+    "cName": "каштан",
+    "cNumb": 102,
+    "cGrup": 15
+  },
+  {
+    "_id": 137,
+    "cCode": 15004,
+    "cName": "бук",
+    "cNumb": 157,
+    "cGrup": 15
+  },
+  {
+    "_id": 138,
+    "cCode": 15005,
+    "cName": "орех",
+    "cNumb": 158,
+    "cGrup": 15
+  },
+  {
+    "_id": 139,
+    "cCode": 15006,
+    "cName": "дуб мореный (L201)",
+    "cNumb": 180,
+    "cGrup": 15
+  },
+  {
+    "_id": 140,
+    "cCode": 16000,
+    "cName": "Бук паркет",
+    "cNumb": 103,
+    "cGrup": 16
+  },
+  {
+    "_id": 141,
+    "cCode": 16001,
+    "cName": "Палисандр",
+    "cNumb": 104,
+    "cGrup": 16
+  },
+  {
+    "_id": 142,
+    "cCode": 16002,
+    "cName": "Зол Дуб",
+    "cNumb": 105,
+    "cGrup": 16
+  },
+  {
+    "_id": 143,
+    "cCode": 16003,
+    "cName": "Беленый дуб",
+    "cNumb": 106,
+    "cGrup": 16
+  },
+  {
+    "_id": 144,
+    "cCode": 16004,
+    "cName": "Дуб мореный",
+    "cNumb": 178,
+    "cGrup": 16
+  },
+  {
+    "_id": 145,
+    "cCode": 16005,
+    "cName": "Кедр беленый",
+    "cNumb": 179,
+    "cGrup": 16
+  },
+  {
+    "_id": 146,
+    "cCode": 16006,
+    "cName": "Венге Танзанский",
+    "cNumb": 181,
+    "cGrup": 16
+  },
+  {
+    "_id": 147,
+    "cCode": 16007,
+    "cName": "Северное дерево",
+    "cNumb": 187,
+    "cGrup": 16
+  },
+  {
+    "_id": 148,
+    "cCode": 17000,
+    "cName": "9047 Венецианская олива",
+    "cNumb": 108,
+    "cGrup": 17
+  },
+  {
+    "_id": 149,
+    "cCode": 17001,
+    "cName": "9104 Рипс Капучино",
+    "cNumb": 109,
+    "cGrup": 17
+  },
+  {
+    "_id": 150,
+    "cCode": 17002,
+    "cName": "913 Крестьянский стиль",
+    "cNumb": 110,
+    "cGrup": 17
+  },
+  {
+    "_id": 151,
+    "cCode": 17003,
+    "cName": "920 Акварель абрикосовая",
+    "cNumb": 111,
+    "cGrup": 17
+  },
+  {
+    "_id": 152,
+    "cCode": 17004,
+    "cName": "9204 Орхидея бежевая",
+    "cNumb": 112,
+    "cGrup": 17
+  },
+  {
+    "_id": 153,
+    "cCode": 17005,
+    "cName": "Белый мат",
+    "cNumb": 113,
+    "cGrup": 17
+  },
+  {
+    "_id": 154,
+    "cCode": 17006,
+    "cName": "белый глянец",
+    "cNumb": 114,
+    "cGrup": 17
+  },
+  {
+    "_id": 155,
+    "cCode": 17007,
+    "cName": "917 Лен Фисташковый",
+    "cNumb": 147,
+    "cGrup": 17
+  },
+  {
+    "_id": 156,
+    "cCode": 17008,
+    "cName": "911 Лопез Белая",
+    "cNumb": 148,
+    "cGrup": 17
+  },
+  {
+    "_id": 157,
+    "cCode": 17009,
+    "cName": "Белый лак",
+    "cNumb": 152,
+    "cGrup": 17
+  },
+  {
+    "_id": 158,
+    "cCode": 18000,
+    "cName": "Сосна",
+    "cNumb": 116,
+    "cGrup": 18
+  },
+  {
+    "_id": 159,
+    "cCode": 18001,
+    "cName": "Дуб",
+    "cNumb": 117,
+    "cGrup": 18
+  },
+  {
+    "_id": 160,
+    "cCode": 18002,
+    "cName": "Ясень",
+    "cNumb": 118,
+    "cGrup": 18
+  },
+  {
+    "_id": 161,
+    "cCode": 18003,
+    "cName": "Орех",
+    "cNumb": 119,
+    "cGrup": 18
+  },
+  {
+    "_id": 162,
+    "cCode": 19000,
+    "cName": "Белое дсп",
+    "cNumb": 120,
+    "cGrup": 19
+  },
+  {
+    "_id": 163,
+    "cCode": 19001,
+    "cName": "Бук дсп",
+    "cNumb": 121,
+    "cGrup": 19
+  },
+  {
+    "_id": 164,
+    "cCode": 19002,
+    "cName": "Орех дсп",
+    "cNumb": 122,
+    "cGrup": 19
+  },
+  {
+    "_id": 165,
+    "cCode": 20000,
+    "cName": "Светло-коричневый",
+    "cNumb": 123,
+    "cGrup": 20
+  },
+  {
+    "_id": 166,
+    "cCode": 20001,
+    "cName": "Темно-коричневый",
+    "cNumb": 124,
+    "cGrup": 20
+  },
+  {
+    "_id": 167,
+    "cCode": 21000,
+    "cName": "белый пластик",
+    "cNumb": 125,
+    "cGrup": 21
+  },
+  {
+    "_id": 168,
+    "cCode": 21001,
+    "cName": "бук пластик",
+    "cNumb": 126,
+    "cGrup": 21
+  },
+  {
+    "_id": 169,
+    "cCode": 21002,
+    "cName": "коричневый пластик",
+    "cNumb": 127,
+    "cGrup": 21
+  },
+  {
+    "_id": 170,
+    "cCode": 22000,
+    "cName": "Белый мат moeller",
+    "cNumb": 128,
+    "cGrup": 22
+  },
+  {
+    "_id": 171,
+    "cCode": 22001,
+    "cName": "Белый глянец moeller",
+    "cNumb": 129,
+    "cGrup": 22
+  },
+  {
+    "_id": 172,
+    "cCode": 22002,
+    "cName": "Венге глянец",
+    "cNumb": 130,
+    "cGrup": 22
+  },
+  {
+    "_id": 173,
+    "cCode": 22003,
+    "cName": "Венге мат",
+    "cNumb": 131,
+    "cGrup": 22
+  },
+  {
+    "_id": 174,
+    "cCode": 22004,
+    "cName": "Махагони глянец",
+    "cNumb": 132,
+    "cGrup": 22
+  },
+  {
+    "_id": 175,
+    "cCode": 22005,
+    "cName": "Махагони мат",
+    "cNumb": 133,
+    "cGrup": 22
+  },
+  {
+    "_id": 176,
+    "cCode": 22006,
+    "cName": "Золотой дуб глянец",
+    "cNumb": 134,
+    "cGrup": 22
+  },
+  {
+    "_id": 177,
+    "cCode": 22007,
+    "cName": "Золотой дуб мат",
+    "cNumb": 135,
+    "cGrup": 22
+  },
+  {
+    "_id": 178,
+    "cCode": 22008,
+    "cName": "Светлый дуб глянец",
+    "cNumb": 136,
+    "cGrup": 22
+  },
+  {
+    "_id": 179,
+    "cCode": 22009,
+    "cName": "Светлый дуб мат",
+    "cNumb": 137,
+    "cGrup": 22
+  },
+  {
+    "_id": 180,
+    "cCode": 22010,
+    "cName": "Крем-Брюле глянец",
+    "cNumb": 138,
+    "cGrup": 22
+  },
+  {
+    "_id": 181,
+    "cCode": 22011,
+    "cName": "Горная лиственница мат",
+    "cNumb": 139,
+    "cGrup": 22
+  },
+  {
+    "_id": 182,
+    "cCode": 22012,
+    "cName": "Каррара мрамор глянец",
+    "cNumb": 140,
+    "cGrup": 22
+  },
+  {
+    "_id": 183,
+    "cCode": 22013,
+    "cName": "Светлый мрамор мат",
+    "cNumb": 141,
+    "cGrup": 22
+  },
+  {
+    "_id": 184,
+    "cCode": 23000,
+    "cName": "Красный ондулин",
+    "cNumb": 142,
+    "cGrup": 23
+  },
+  {
+    "_id": 185,
+    "cCode": 23001,
+    "cName": "Коричневый ондулин",
+    "cNumb": 143,
+    "cGrup": 23
+  },
+  {
+    "_id": 186,
+    "cCode": 23002,
+    "cName": "Зеленый ондулин",
+    "cNumb": 144,
+    "cGrup": 23
+  },
+  {
+    "_id": 187,
+    "cCode": 23003,
+    "cName": "Стандарт ондулин",
+    "cNumb": 154,
+    "cGrup": 23
+  },
+  {
+    "_id": 188,
+    "cCode": 24001,
+    "cName": "темная бронза",
+    "cNumb": 164,
+    "cGrup": 24
+  },
+  {
+    "_id": 189,
+    "cCode": 24002,
+    "cName": "шампань",
+    "cNumb": 165,
+    "cGrup": 24
+  },
+  {
+    "_id": 190,
+    "cCode": 24004,
+    "cName": "матовое золото",
+    "cNumb": 172,
+    "cGrup": 24
+  },
+  {
+    "_id": 191,
+    "cCode": 24005,
+    "cName": "латунь матовый",
+    "cNumb": 189,
+    "cGrup": 24
+  },
+  {
+    "_id": 192,
+    "cCode": 14006,
+    "cName": "Салатовый сайдинг",
+    "cNumb": 199,
+    "cGrup": 14
+  },
+  {
+    "_id": 193,
+    "cCode": 15007,
+    "cName": "сантал темный",
+    "cNumb": 208,
+    "cGrup": 15
+  },
+  {
+    "_id": 194,
+    "cCode": 14007,
+    "cName": "Серо-голубой сайдинг",
+    "cNumb": 209,
+    "cGrup": 14
+  }
+]

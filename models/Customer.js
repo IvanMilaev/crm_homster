@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+
 // Create Schema
-const UserSchema = new Schema({
+const CustomerSchema = new Schema({
   _id: Number,
   name: {
     first: {
@@ -14,22 +15,21 @@ const UserSchema = new Schema({
     }
   },
   is_active: Boolean,
-  email: {
-    type: String,
-    required: true
-  },
-  password: {
-    type: String,
-    required: true
-  },
+  balance: String,
   picture: String,
+  age: Number,
+  email: String,
   phone: String,
   alt_phones: [String],
-  position: Number,
-  birth: Date,
-  passport: String,
-  driver_lic: String,
-  address: String,
+  address: [String],
+  company: String,
+  comments: [
+    {
+      text: String,
+      date: Date,
+      author: Number
+    }
+  ],
   eye_color: String,
   friends: [
     {
@@ -44,17 +44,15 @@ const UserSchema = new Schema({
   longitude: String,
   tags: [String],
   range: [Number],
-  comments: [
-    {
-      text: String,
-      date: Date,
-      author: Number
-    }
-  ],
+
   when_created: {
     type: Date,
     default: Date.now
   },
-  who_create: Number
+  who_create: Number,
+  when_edited: Date,
+  who_edited: Number,
+  ips: [String],
+  orders: [Number]
 });
-module.exports = User = mongoose.model("users", UserSchema);
+module.exports = Customer = mongoose.model("customers", CustomerSchema);

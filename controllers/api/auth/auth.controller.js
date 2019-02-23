@@ -1,20 +1,22 @@
-const express = require("express");
-const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const keys = require("../../config/keys");
-// Load input validation
-const validateRegisterInput = require("../../validation/register");
-const validateLoginInput = require("../../validation/login");
+const keys = require("../../../config/keys");
+
 // Load User model
-const User = require("../../models/User");
+const User = require("../../../models/User");
 
-// @route POST api/users/register
-// @desc Register user
-// @access Public
-router.post("/register", (req, res) => {
-  // Form validation
+// Load input validation
+const validateRegisterInput = require("../../../validation/register");
+const validateLoginInput = require("../../../validation/login");
 
+// Export controller functions
+module.exports = {
+  registerUser: registerUser,
+  loginUser: loginUser
+};
+
+// Register new user
+function registerUser(req, res) {
   const { errors, isValid } = validateRegisterInput(req.body);
 
   // Check validation
@@ -45,12 +47,10 @@ router.post("/register", (req, res) => {
       });
     }
   });
-});
+}
 
-// @route POST api/users/login
-// @desc Login user and return JWT token
-// @access Public
-router.post("/login", (req, res) => {
+// LoginIn User
+function loginUser(req, res) {
   // Form validation
   const { errors, isValid } = validateLoginInput(req.body);
 
@@ -100,6 +100,4 @@ router.post("/login", (req, res) => {
       }
     });
   });
-});
-
-module.exports = router;
+}
