@@ -1,8 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
 import * as serviceWorker from "./serviceWorker";
-import "assets/css/material-dashboard-react.css?v=1.4.1";
+//import "assets/css/material-dashboard-react.css?v=1.4.1";
 
+import "assets/scss/material-dashboard-pro-react.scss?v=1.5.0";
 // entry point
 import Main from "containers/main";
 
