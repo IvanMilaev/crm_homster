@@ -7,7 +7,8 @@ import {
   roseCardHeader,
   whiteColor,
   blackColor,
-  hexToRgb
+  hexToRgb,
+  grayColor
 } from "assets/jss/material-dashboard-pro-react.jsx";
 const cardHeaderStyle = {
   cardHeader: {

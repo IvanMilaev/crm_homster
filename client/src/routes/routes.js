@@ -30,7 +30,7 @@ import Wizard from "views/Forms/Wizard.jsx";
 
 // containers
 import LoginPage from "containers/login";
-
+import Desktop from "containers/desktop";
 // @material-ui/icons
 import Apps from "@material-ui/icons/Apps";
 import DashboardIcon from "@material-ui/icons/Dashboard";
@@ -48,7 +48,15 @@ var dashRoutes = [
     rtlName: "لوحة القيادة",
     icon: DashboardIcon,
     component: Dashboard,
-    layout: "/admin"
+    layout: "/crm"
+  },
+  {
+    path: "/desktop",
+    name: "Desktop",
+    rtlName: "لوحة القيادة",
+    icon: DashboardIcon,
+    component: Desktop,
+    layout: "/crm"
   },
   {
     collapse: true,
@@ -82,7 +90,7 @@ var dashRoutes = [
         mini: "T",
         rtlMini: "تي",
         component: TimelinePage,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/login-page",
@@ -118,7 +126,7 @@ var dashRoutes = [
         mini: "UP",
         rtlMini: "شع",
         component: UserProfile,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/error-page",
@@ -153,7 +161,7 @@ var dashRoutes = [
             mini: "B",
             rtlMini: "ب",
             component: Buttons,
-            layout: "/admin"
+            layout: "/crm"
           }
         ]
       },
@@ -164,7 +172,7 @@ var dashRoutes = [
         mini: "B",
         rtlMini: "ب",
         component: Buttons,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/grid-system",
@@ -173,7 +181,7 @@ var dashRoutes = [
         mini: "GS",
         rtlMini: "زو",
         component: GridSystem,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/panels",
@@ -182,7 +190,7 @@ var dashRoutes = [
         mini: "P",
         rtlMini: "ع",
         component: Panels,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/sweet-alert",
@@ -191,7 +199,7 @@ var dashRoutes = [
         mini: "SA",
         rtlMini: "ومن",
         component: SweetAlert,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/notifications",
@@ -200,7 +208,7 @@ var dashRoutes = [
         mini: "N",
         rtlMini: "ن",
         component: Notifications,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/icons",
@@ -209,7 +217,7 @@ var dashRoutes = [
         mini: "I",
         rtlMini: "و",
         component: Icons,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/typography",
@@ -218,7 +226,7 @@ var dashRoutes = [
         mini: "T",
         rtlMini: "ر",
         component: Typography,
-        layout: "/admin"
+        layout: "/crm"
       }
     ]
   },
@@ -236,7 +244,7 @@ var dashRoutes = [
         mini: "RF",
         rtlMini: "صو",
         component: RegularForms,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/extended-forms",
@@ -245,7 +253,7 @@ var dashRoutes = [
         mini: "EF",
         rtlMini: "هوو",
         component: ExtendedForms,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/validation-forms",
@@ -254,7 +262,7 @@ var dashRoutes = [
         mini: "VF",
         rtlMini: "تو",
         component: ValidationForms,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/wizard",
@@ -263,7 +271,7 @@ var dashRoutes = [
         mini: "W",
         rtlMini: "ث",
         component: Wizard,
-        layout: "/admin"
+        layout: "/crm"
       }
     ]
   },
@@ -281,7 +289,7 @@ var dashRoutes = [
         mini: "RT",
         rtlMini: "صر",
         component: RegularTables,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/extended-tables",
@@ -290,7 +298,7 @@ var dashRoutes = [
         mini: "ET",
         rtlMini: "هور",
         component: ExtendedTables,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/react-tables",
@@ -299,7 +307,7 @@ var dashRoutes = [
         mini: "RT",
         rtlMini: "در",
         component: ReactTables,
-        layout: "/admin"
+        layout: "/crm"
       }
     ]
   },
@@ -317,7 +325,7 @@ var dashRoutes = [
         mini: "GM",
         rtlMini: "زم",
         component: GoogleMaps,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/full-screen-maps",
@@ -326,7 +334,7 @@ var dashRoutes = [
         mini: "FSM",
         rtlMini: "ووم",
         component: FullScreenMap,
-        layout: "/admin"
+        layout: "/crm"
       },
       {
         path: "/vector-maps",
@@ -335,7 +343,7 @@ var dashRoutes = [
         mini: "VM",
         rtlMini: "تم",
         component: VectorMap,
-        layout: "/admin"
+        layout: "/crm"
       }
     ]
   },
@@ -345,7 +353,7 @@ var dashRoutes = [
     rtlName: "الحاجيات",
     icon: WidgetsIcon,
     component: Widgets,
-    layout: "/admin"
+    layout: "/crm"
   },
   {
     path: "/charts",
@@ -353,7 +361,7 @@ var dashRoutes = [
     rtlName: "الرسوم البيانية",
     icon: Timeline,
     component: Charts,
-    layout: "/admin"
+    layout: "/crm"
   },
   {
     path: "/calendar",
@@ -361,7 +369,7 @@ var dashRoutes = [
     rtlName: "التقويم",
     icon: DateRange,
     component: Calendar,
-    layout: "/admin"
+    layout: "/crm"
   }
 ];
 export default dashRoutes;

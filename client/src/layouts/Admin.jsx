@@ -35,8 +35,8 @@ class Dashboard extends React.Component {
       miniActive: false,
       image: image,
       color: "blue",
-      bgColor: "black",
-      hasImage: true,
+      bgColor: "gray",
+      hasImage: false,
       fixedClasses: "dropdown"
     };
     this.resizeFunction = this.resizeFunction.bind(this);
@@ -85,7 +85,7 @@ class Dashboard extends React.Component {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   };
   getRoute() {
-    return this.props.location.pathname !== "/admin/full-screen-maps";
+    return this.props.location.pathname !== "/crm/full-screen-maps";
   }
   getActiveRoute = routes => {
     let activeRoute = "Default Brand Text";
@@ -110,7 +110,7 @@ class Dashboard extends React.Component {
       if (prop.collapse) {
         return this.getRoutes(prop.views);
       }
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/crm") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -145,7 +145,7 @@ class Dashboard extends React.Component {
       <div className={classes.wrapper}>
         <Sidebar
           routes={routes}
-          logoText={"Creative Tim"}
+          logoText={"SECRET AGENCY"}
           logo={this.state.bgColor === "white" ? logoBlue : logoWhite}
           image={this.state.image}
           handleDrawerToggle={this.handleDrawerToggle}
@@ -176,24 +176,25 @@ class Dashboard extends React.Component {
             </div>
           )}
           {this.getRoute() ? <Footer fluid /> : null}
-          <FixedPlugin
-            handleImageClick={this.handleImageClick}
-            handleColorClick={this.handleColorClick}
-            handleBgColorClick={this.handleBgColorClick}
-            handleHasImage={this.handleHasImage}
-            color={this.state["color"]}
-            bgColor={this.state["bgColor"]}
-            bgImage={this.state["image"]}
-            handleFixedClick={this.handleFixedClick}
-            fixedClasses={this.state.fixedClasses}
-            sidebarMinimize={this.sidebarMinimize.bind(this)}
-            miniActive={this.state.miniActive}
-          />
         </div>
       </div>
     );
   }
 }
+
+/*  <FixedPlugin
+      handleImageClick={this.handleImageClick}
+      handleColorClick={this.handleColorClick}
+      handleBgColorClick={this.handleBgColorClick}
+      handleHasImage={this.handleHasImage}
+      color={this.state["color"]}
+      bgColor={this.state["bgColor"]}
+      bgImage={this.state["image"]}
+      handleFixedClick={this.handleFixedClick}
+      fixedClasses={this.state.fixedClasses}
+      sidebarMinimize={this.sidebarMinimize.bind(this)}
+      miniActive={this.state.miniActive}
+    />*/
 
 Dashboard.propTypes = {
   classes: PropTypes.object.isRequired

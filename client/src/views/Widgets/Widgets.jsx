@@ -30,7 +30,8 @@ import image from "assets/img/faces/card-profile1-square.jpg";
 
 import {
   cardTitle,
-  roseColor
+  roseColor,
+  primaryColor
 } from "assets/jss/material-dashboard-pro-react.jsx";
 
 const styles = {
@@ -54,12 +55,13 @@ const styles = {
     margin: "10px auto 0",
     width: "130px",
     height: "130px",
-    border: "1px solid #E5E5E5",
+    border: "1px solid " + primaryColor[1],
     borderRadius: "50%",
     lineHeight: "174px",
     "& svg": {
       width: "55px",
-      height: "55px"
+      height: "55px",
+      color: primaryColor[0]
     },
     "& .fab,& .fas,& .far,& .fal,& .material-icons": {
       width: "55px",
@@ -67,7 +69,7 @@ const styles = {
     }
   },
   iconRose: {
-    color: roseColor
+    color: primaryColor[0]
   },
   marginTop30: {
     marginTop: "30px"
@@ -93,8 +95,8 @@ class Widgets extends React.Component {
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
             <Card>
-              <CardHeader color="warning" text>
-                <CardText color="warning">
+              <CardHeader color="info" text>
+                <CardText color="info">
                   <h4 className={classes.cardTitleWhite}>Employees Stats</h4>
                   <h4 className={classes.cardCategoryWhite}>
                     New employees on 15th September, 2016
@@ -104,11 +106,11 @@ class Widgets extends React.Component {
               <CardBody>
                 <Table
                   hover
-                  tableHeaderColor="warning"
+                  tableHeaderColor="info"
                   tableHead={["ID", "Name", "Salary", "Country"]}
                   tableData={[
                     ["1", "Dakota Rice", "$36,738", "Niger"],
-                    ["2", "Minerva Hooper", "$23,789", "Curaçao"],
+                    ["2", "Minerva Hooper", "$23,789", "Curaï¿½ao"],
                     ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
                     ["4", "Philip Chaney", "$38,735", "Korea, South"]
                   ]}
@@ -119,7 +121,7 @@ class Widgets extends React.Component {
           <GridItem xs={12} sm={12} md={6}>
             <CustomTabs
               title="Tasks:"
-              headerColor="rose"
+              headerColor="info"
               tabs={[
                 {
                   tabName: "Bugs",
@@ -169,15 +171,17 @@ class Widgets extends React.Component {
                       <Home className={classes.iconRose} />
                     </div>
                     <h3
-                      className={`${classes.cardTitle} ${classes.marginTop30}`}
+                      className={`${classes.cardTitleWhite} ${
+                        classes.marginTop30
+                      }`}
                     >
                       $29
                     </h3>
-                    <p className={classes.cardDescription}>
+                    <p className={classes.cardCategory}>
                       This is good if your company size is between 2 and 10
                       Persons.
                     </p>
-                    <Button round color="rose">
+                    <Button round color="info">
                       Choose plan
                     </Button>
                   </CardBody>
@@ -188,10 +192,12 @@ class Widgets extends React.Component {
                   <CardBody pricing plain>
                     <h6 className={classes.cardCategory}>Freelancer</h6>
                     <div className={classes.icon}>
-                      <Icon className={classes.iconWhite}>weekend</Icon>
+                      <Icon className={classes.iconRose}>weekend</Icon>
                     </div>
                     <h3
-                      className={`${classes.cardTitle} ${classes.marginTop30}`}
+                      className={`${classes.cardTitleWhite} ${
+                        classes.marginTop30
+                      }`}
                     >
                       FREE
                     </h3>
@@ -199,7 +205,7 @@ class Widgets extends React.Component {
                       This is good if your company size is between 2 and 10
                       Persons.
                     </p>
-                    <Button round color="white">
+                    <Button round color="info">
                       Choose plan
                     </Button>
                   </CardBody>

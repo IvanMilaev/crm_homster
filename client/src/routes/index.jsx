@@ -9,7 +9,7 @@ import AdminLayout from "layouts/Admin.jsx";
 const indexRoutes = [
   { path: "/", component: IntroPage, private: false, exact: true },
   { path: "/login", component: LoginPage, private: false, exact: true },
-  { path: "/admin", component: AdminLayout, private: true, exact: false },
+  { path: "/crm", component: AdminLayout, private: true, exact: false },
   { path: "/auth", component: AuthLayout, private: false, exact: false },
   { path: "/rtl", component: RtlLayout, private: true, exact: false }
 ];

@@ -128,7 +128,8 @@ const dangerColor = [
   "#f55a4e",
   "#d32f2f",
   "#ebcccc",
-  "#f2dede"
+  "#f2dede",
+  "#491410"
 ];
 const successColor = [
   "#4caf50",
@@ -137,9 +138,13 @@ const successColor = [
   "#5cb860",
   "#388e3c",
   "#d0e9c6",
-  "#dff0d8"
+  "#dff0d8",
+  "#416742"
 ];
 const infoColor = [
+  "#3f3f3f",
+  "#3f3f3f",
+  "#383838",
   "#00acc1",
   "#26c6da",
   "#00acc1",
@@ -168,8 +173,16 @@ const grayColor = [
   "#e7e7e7",
   "#212121",
   "#c8c8c8",
-  "#505050"
+  "#505050",
+  "#2f2f2f",
+  "#3f3f3f",
+  "#d8d8d8",
+  "#161616",
+  "#2b2b2b"
 ];
+
+const blueColor = ["#51aecf", "#5BC2E7"];
+
 const blackColor = "#000";
 const whiteColor = "#FFF";
 const twitterColor = "#55acee";
@@ -404,6 +417,7 @@ export {
   infoColor,
   roseColor,
   grayColor,
+  blueColor,
   blackColor,
   whiteColor,
   twitterColor,

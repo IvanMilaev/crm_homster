@@ -26,7 +26,7 @@ const timelineStyle = theme => ({
       position: "absolute",
       content: '" "',
       width: "3px",
-      backgroundColor: grayColor[11],
+      backgroundColor: primaryColor[1],
       left: "50%",
       marginLeft: "-1px"
     }
@@ -53,7 +53,7 @@ const timelineStyle = theme => ({
     [theme.breakpoints.down("sm")]: {
       left: "5% !important"
     },
-    color: whiteColor,
+    color: primaryColor[1],
     width: "50px",
     height: "50px",
     lineHeight: "51px",
@@ -82,21 +82,21 @@ const timelineStyle = theme => ({
       ", 0.4)"
   },
   success: {
-    backgroundColor: successColor[0],
+    backgroundColor: successColor[7],
     boxShadow:
       "0 4px 20px 0px rgba(" +
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 10px -5px rgba(" +
-      hexToRgb(successColor[0]) +
+      hexToRgb(successColor[7]) +
       ", 0.4)"
   },
   danger: {
-    backgroundColor: dangerColor[0],
+    backgroundColor: dangerColor[7],
     boxShadow:
       "0 4px 20px 0px rgba(" +
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 10px -5px rgba(" +
-      hexToRgb(dangerColor[0]) +
+      hexToRgb(dangerColor[7]) +
       ", 0.4)"
   },
   warning: {
@@ -145,16 +145,16 @@ const timelineStyle = theme => ({
     position: "relative",
     boxShadow: "0 1px 4px 0 rgba(" + hexToRgb(blackColor) + ", 0.14)",
     borderRadius: "6px",
-    color: "rgba(" + hexToRgb(blackColor) + ", 0.87)",
-    background: whiteColor,
+    color: "rgba(" + hexToRgb(whiteColor) + ", 0.7)",
+    background: grayColor[20],
     "&:before": {
       position: "absolute",
       top: "26px",
       right: "-15px",
       display: "inline-block",
       borderTop: "15px solid transparent",
-      borderLeft: "15px solid " + grayColor[10],
-      borderRight: "0 solid " + grayColor[10],
+      borderLeft: "15px solid " + grayColor[19],
+      borderRight: "0 solid " + grayColor[19],
       borderBottom: "15px solid transparent",
       content: '" "'
     },
@@ -164,8 +164,8 @@ const timelineStyle = theme => ({
       right: "-14px",
       display: "inline-block",
       borderTop: "14px solid transparent",
-      borderLeft: "14px solid " + whiteColor,
-      borderRight: "0 solid " + whiteColor,
+      borderLeft: "14px solid " + grayColor[19],
+      borderRight: "0 solid " + grayColor[19],
       borderBottom: "14px solid transparent",
       content: '" "'
     }
@@ -176,7 +176,7 @@ const timelineStyle = theme => ({
   timelinePanelInverted: {
     [theme.breakpoints.up("sm")]: {
       float: "right",
-      backgroundColor: whiteColor,
+      backgroundColor: grayColor[19],
       "&:before": {
         borderLeftWidth: "0",
         borderRightWidth: "15px",
@@ -204,13 +204,14 @@ const timelineStyle = theme => ({
     float: "left"
   },
   footerTitle: {
-    color: grayColor[7],
+    color: "rgba(" + hexToRgb(whiteColor) + ", 0.3)",
     fontWeight: "400",
     margin: "10px 0px 0px"
   },
   footerLine: {
     marginTop: "10px",
-    marginBottom: "5px"
+    marginBottom: "5px",
+    borderColor: grayColor[20]
   }
 });
 

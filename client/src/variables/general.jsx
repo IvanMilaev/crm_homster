@@ -35,7 +35,7 @@ const rtlStories = [
   {
     // Second story
     inverted: true,
-    badgeColor: "success",
+    badgeColor: "info",
     badgeIcon: Extension,
     title: "جُل حكومة",
     titleColor: "success",
@@ -95,10 +95,10 @@ const widgetStories = [
   {
     // First story
     inverted: true,
-    badgeColor: "danger",
+    badgeColor: "info",
     badgeIcon: CardTravel,
     title: "Some Title",
-    titleColor: "danger",
+    titleColor: "info",
     body: (
       <p>
         Wifey made the best Father's Day meal ever. So thankful so happy so
@@ -113,10 +113,10 @@ const widgetStories = [
   {
     // Second story
     inverted: true,
-    badgeColor: "success",
+    badgeColor: "info",
     badgeIcon: Extension,
     title: "Another One",
-    titleColor: "success",
+    titleColor: "info",
     body: (
       <p>
         Thank God for the support of my wife and real friends. I also wanted to
@@ -175,7 +175,7 @@ const stories = [
   {
     // First story
     inverted: true,
-    badgeColor: "danger",
+    badgeColor: "info",
     badgeIcon: CardTravel,
     title: "Some Title",
     titleColor: "danger",
@@ -192,7 +192,7 @@ const stories = [
   },
   {
     // Second story
-    badgeColor: "success",
+    badgeColor: "info",
     badgeIcon: Extension,
     title: "Another One",
     titleColor: "success",
@@ -246,7 +246,7 @@ const stories = [
   },
   {
     // Fourth story
-    badgeColor: "warning",
+    badgeColor: "info",
     badgeIcon: FlightLand,
     title: "Another One",
     titleColor: "warning",
@@ -324,6 +324,13 @@ const events = [
 // // // Tasks for TasksCard - see Widget view
 // #############################
 
+var task_points = [
+  'Изучить документ "Приложение 1007-2"',
+  "Найти и допросить сотрудника класса D, проходившего как подопытный",
+  "Связаться с доктором Лугининым, получить консультацию, составить протокол",
+  "Произвести меметическую зачистку ассистента Комова",
+  "Составить план действий по решению ситуации  с обьектом SCP-1007-RU"
+];
 var bugs = [
   'Sign contract for "What are conference organizers afraid of?"',
   "Lines From Great Russian Literature? Or E-mails From My Boss?",
@@ -423,6 +430,7 @@ export {
   // stories for Timeline view
   stories,
   // these 3 are used to create the tasks lists in TasksCard - Widget view
+  task_points,
   bugs,
   website,
   server,

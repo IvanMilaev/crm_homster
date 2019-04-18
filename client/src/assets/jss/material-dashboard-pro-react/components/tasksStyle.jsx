@@ -3,7 +3,9 @@ import {
   primaryColor,
   dangerColor,
   grayColor,
-  tooltip
+  tooltip,
+  whiteColor,
+  hexToRgb
 } from "assets/jss/material-dashboard-pro-react.jsx";
 import customCheckboxRadioSwitch from "assets/jss/material-dashboard-pro-react/customCheckboxRadioSwitch.jsx";
 
@@ -14,7 +16,7 @@ const tasksStyle = {
   },
   tableRow: {
     position: "relative",
-    borderBottom: "1px solid " + grayColor[5]
+    borderBottom: "0.5px solid " + grayColor[23]
   },
   tableActions: {
     border: "none",
@@ -27,7 +29,8 @@ const tasksStyle = {
     verticalAlign: "middle",
     border: "none",
     lineHeight: "1.42857143",
-    fontSize: "14px"
+    fontSize: "14px",
+    color: "rgba(" + hexToRgb(whiteColor) + ", 0.7)"
   },
   tableActionButton: {
     width: "27px",

@@ -5,8 +5,8 @@ import {
   successColor,
   infoColor,
   roseColor,
+  whiteColor,
   grayColor,
-  blackColor,
   defaultFont,
   hexToRgb
 } from "assets/jss/material-dashboard-pro-react.jsx";
@@ -53,17 +53,18 @@ const tableStyle = theme => ({
     fontSize: "1.25em !important"
   },
   tableHeadCell: {
-    color: "rgba(" + hexToRgb(blackColor) + ", 0.87)",
+    color: "rgba(" + hexToRgb(whiteColor) + ", 0.90)",
     border: "none !important"
   },
   tableCell: {
     ...defaultFont,
+    color: "rgba(" + hexToRgb(whiteColor) + ", 0.7)",
     lineHeight: "1.42857143",
     padding: "12px 8px!important",
     verticalAlign: "middle",
     fontSize: "1em",
     borderBottom: "none",
-    borderTop: "1px solid " + grayColor[5],
+    borderTop: "1px solid " + grayColor[20],
     position: "relative",
     [theme.breakpoints.down("sm")]: {
       minHeight: "24px",
