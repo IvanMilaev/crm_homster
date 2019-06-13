@@ -7,9 +7,9 @@ import "vis/dist/vis-network.min.css";
 
 import { graph, options } from "variables/network.jsx";
 
-class MyNetwork extends Component {
+class TaskGraph extends Component {
   render() {
-    const { selectNode } = this.props;
+    const { selectNode } = this.props.eventHandlers;
     const events = {
       select: function(event) {
         const { nodes, edges } = event;
@@ -33,4 +33,4 @@ class MyNetwork extends Component {
   }
 }
 
-export default MyNetwork;
+export default TaskGraph;

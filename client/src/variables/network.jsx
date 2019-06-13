@@ -1,4 +1,5 @@
-import confidential_taskIcon from "assets/img/svg/confidential-email.svg";
+import confidentialTaskIcon from "assets/img/svg/confidential-email.svg";
+import confidentialTaskIconSelected from "assets/img/svg/confidential-email_sel.svg";
 import objectIcon from "assets/img/svg/power.svg";
 import documentsResearchIcon from "assets/img/svg/research.svg";
 import peopleContactsIcon from "assets/img/svg/confidential.svg";
@@ -23,7 +24,10 @@ const graph = {
       label: "Задание 23484",
       title: "Задание 23484",
       font: { color: grayColor[0] },
-      image: confidential_taskIcon,
+      image: {
+        unselected: confidentialTaskIcon,
+        selected: confidentialTaskIconSelected
+      },
       shape: "image"
     },
     {
@@ -135,82 +139,98 @@ const graph = {
     {
       from: 1,
       to: 2,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 3,
       to: 1,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 2,
       to: 4,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 2,
       to: 5,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 4,
       to: 6,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 4,
       to: 7,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 4,
       to: 8,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 4,
       to: 9,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 6,
       to: 10,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 6,
       to: 11,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 7,
       to: 12,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 8,
       to: 13,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 9,
       to: 14,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 6,
       to: 12,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 8,
       to: 12,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     },
     {
       from: 9,
       to: 12,
-      color: { color: primaryColor[0], highlight: primaryColor[1] }
+      color: { color: grayColor[0], highlight: primaryColor[1] },
+      selectionWidth: 0.3
     }
   ]
 };

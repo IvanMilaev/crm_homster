@@ -1,8 +1,9 @@
 import React from "react";
+import ThreeContainer from "threejs/threeContainer";
 
 const IntroPage = () => (
   <div>
-    <h1>This is Intro Page</h1>
+    <ThreeContainer />
   </div>
 );
 
