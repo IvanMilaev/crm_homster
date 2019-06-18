@@ -27,7 +27,7 @@ const cardFooterStyle = {
     display: "block"
   },
   cardFooterStats: {
-    borderTop: "1px solid" + grayColor[8],
+    borderTop: "1px solid" + grayColor[23],
     marginTop: "20px",
     "& svg": {
       position: "relative",
@@ -47,7 +47,7 @@ const cardFooterStyle = {
     }
   },
   cardFooterChart: {
-    borderTop: "1px solid" + grayColor[8]
+    borderTop: "1px solid" + grayColor[20]
   }
 };
 

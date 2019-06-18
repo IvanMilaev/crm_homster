@@ -114,6 +114,10 @@ const primaryColor = [
 ];
 const warningColor = [
   "#ff9800",
+
+  "#895100",
+  "#995B00",
+  "#ff9800",
   "#ffa726",
   "#fb8c00",
   "#ffa21a",
@@ -122,6 +126,9 @@ const warningColor = [
   "#fcf8e3"
 ];
 const dangerColor = [
+  "#7a211b",
+  "#7a211b",
+  "#6d1d18",
   "#f44336",
   "#ef5350",
   "#e53935",
@@ -133,6 +140,8 @@ const dangerColor = [
 ];
 const successColor = [
   "#4caf50",
+  "#2d6930",
+  "#285e2b",
   "#66bb6a",
   "#43a047",
   "#5cb860",
@@ -237,7 +246,7 @@ const warningBoxShadow = {
     hexToRgb(blackColor) +
     ",.14), 0 7px 10px -5px rgba(" +
     hexToRgb(warningColor[0]) +
-    ",.4)"
+    ",.3)"
 };
 const dangerBoxShadow = {
   boxShadow:
@@ -361,7 +370,7 @@ const tooltip = {
 };
 
 const title = {
-  color: grayColor[2],
+  color: grayColor[3],
   textDecoration: "none",
   fontWeight: "300",
   marginTop: "30px",

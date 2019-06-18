@@ -149,6 +149,15 @@ const adminNavbarLinksStyle = theme => ({
   headerLinksSvg: {
     width: "20px !important",
     height: "20px !important"
+  },
+  modalPaper: {
+    position: "absolute",
+    //backgroundColor: theme.palette.background.paper,
+    //boxShadow: theme.shadows[5],
+    //padding: theme.spacing(4),
+    //outline: "none",
+    top: "20%",
+    left: "50%"
   }
 });
 

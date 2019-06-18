@@ -10,7 +10,7 @@ import Divider from "@material-ui/core/Divider";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 
-import ThreeContainer from "threejs/threeContainer";
+//import ThreeContainer from "threejs/threeContainer";
 
 // application components
 import Task from "containers/task";
@@ -22,7 +22,7 @@ const Desktop = () => (
     <Divider />
     <GridContainer>
       <GridItem xs={12} sm={12} md={12} lg={12}>
-        <ThreeContainer />
+        <Task />
       </GridItem>
     </GridContainer>
   </div>

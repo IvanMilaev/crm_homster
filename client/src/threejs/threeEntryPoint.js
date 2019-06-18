@@ -1,4 +1,4 @@
-import SceneManager from "./scenes/blacksun/SceneManager";
+import SceneManager from "./scenes/pixelparticles/SceneManager";
 
 export default container => {
   const canvas = createCanvas(document, container);

@@ -274,12 +274,7 @@ class FixedPlugin extends Component {
             </li>
             <li className="button-container">
               <div>
-                <Button
-                  color="warning"
-                  href="https://www.creative-tim.com/product/material-dashboard-pro-react"
-                  target="_blank"
-                  fullWidth
-                >
+                <Button color="warning" href="#" target="_blank" fullWidth>
                   Buy now
                 </Button>
               </div>

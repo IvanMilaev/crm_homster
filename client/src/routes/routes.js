@@ -44,7 +44,7 @@ import WidgetsIcon from "@material-ui/icons/Widgets";
 var dashRoutes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
+    name: "Приборная панель",
     rtlName: "لوحة القيادة",
     icon: DashboardIcon,
     component: Dashboard,
@@ -52,7 +52,7 @@ var dashRoutes = [
   },
   {
     path: "/desktop",
-    name: "Desktop",
+    name: "Рабочий стол",
     rtlName: "لوحة القيادة",
     icon: DashboardIcon,
     component: Desktop,

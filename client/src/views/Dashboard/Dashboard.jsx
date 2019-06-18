@@ -46,16 +46,16 @@ import {
 
 import dashboardStyle from "assets/jss/material-dashboard-pro-react/views/dashboardStyle";
 
-import priceImage1 from "assets/img/card-2.jpeg";
-import priceImage2 from "assets/img/card-3.jpeg";
-import priceImage3 from "assets/img/smartphone.svg";
+import priceImage1 from "assets/img/scp-002.jpg";
+import priceImage2 from "assets/img/scp-003.jpg";
+import priceImage3 from "assets/img/SCP-173.jpg";
 
-const us_flag = require("assets/img/flags/US.png");
-const de_flag = require("assets/img/flags/DE.png");
-const au_flag = require("assets/img/flags/AU.png");
-const gb_flag = require("assets/img/flags/GB.png");
-const ro_flag = require("assets/img/flags/RO.png");
-const br_flag = require("assets/img/flags/BR.png");
+const us_flag = require("assets/img/flags/us.png");
+const de_flag = require("assets/img/flags/de.png");
+const au_flag = require("assets/img/flags/au.png");
+const gb_flag = require("assets/img/flags/gb.png");
+const ro_flag = require("assets/img/flags/ro.png");
+const br_flag = require("assets/img/flags/br.png");
 
 var mapData = {
   AU: 760,
@@ -92,9 +92,10 @@ class Dashboard extends React.Component {
                 <CardIcon color="warning">
                   <Icon>content_copy</Icon>
                 </CardIcon>
-                <p className={classes.cardCategory}>Used Space</p>
+                <p className={classes.cardCategory}>Заполнено баз содержания</p>
                 <h3 className={classes.cardTitle}>
-                  49/50 <small>GB</small>
+                  428/500
+                  <small>ЕД</small>
                 </h3>
               </CardHeader>
               <CardFooter stats>
@@ -102,9 +103,7 @@ class Dashboard extends React.Component {
                   <Danger>
                     <Warning />
                   </Danger>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    Get more space
-                  </a>
+                  <p>Увеличить</p>
                 </div>
               </CardFooter>
             </Card>
@@ -115,13 +114,13 @@ class Dashboard extends React.Component {
                 <CardIcon color="success">
                   <Store />
                 </CardIcon>
-                <p className={classes.cardCategory}>Revenue</p>
+                <p className={classes.cardCategory}>Расходы на содержание</p>
                 <h3 className={classes.cardTitle}>$34,245</h3>
               </CardHeader>
               <CardFooter stats>
                 <div className={classes.stats}>
                   <DateRange />
-                  Last 24 Hours
+                  Последние 24 часа
                 </div>
               </CardFooter>
             </Card>
@@ -132,13 +131,15 @@ class Dashboard extends React.Component {
                 <CardIcon color="danger">
                   <Icon>info_outline</Icon>
                 </CardIcon>
-                <p className={classes.cardCategory}>Fixed Issues</p>
+                <p className={classes.cardCategory}>
+                  Нарушеня условий содержания
+                </p>
                 <h3 className={classes.cardTitle}>75</h3>
               </CardHeader>
               <CardFooter stats>
                 <div className={classes.stats}>
                   <LocalOffer />
-                  Tracked from Github
+                  Отслеживание персоналом
                 </div>
               </CardFooter>
             </Card>
@@ -147,15 +148,15 @@ class Dashboard extends React.Component {
             <Card>
               <CardHeader color="info" stats icon>
                 <CardIcon color="info">
-                  <i className="fab fa-twitter" />
+                  <Icon>info_outline</Icon>
                 </CardIcon>
-                <p className={classes.cardCategory}>Followers</p>
-                <h3 className={classes.cardTitle}>+245</h3>
+                <p className={classes.cardCategory}>Новых испытаний</p>
+                <h3 className={classes.cardTitle}>+15</h3>
               </CardHeader>
               <CardFooter stats>
                 <div className={classes.stats}>
                   <Update />
-                  Just Updated
+                  Обновлено минуту назад
                 </div>
               </CardFooter>
             </Card>
@@ -169,7 +170,7 @@ class Dashboard extends React.Component {
                   <Language />
                 </CardIcon>
                 <h4 className={classes.cardIconTitle}>
-                  Global Sales by Top Locations
+                  Глобальные базы содержания
                 </h4>
               </CardHeader>
               <CardBody>
@@ -286,17 +287,17 @@ class Dashboard extends React.Component {
                     </Button>
                   </Tooltip>
                 </div>
-                <h4 className={classes.cardTitle}>Daily Sales</h4>
+                <h4 className={classes.cardTitle}>Инциндент S-5207.04</h4>
                 <p className={classes.cardCategory}>
                   <span className={classes.successText}>
                     <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                   </span>{" "}
-                  increase in today sales.
+                  Увеличение активности.
                 </p>
               </CardBody>
               <CardFooter chart>
                 <div className={classes.stats}>
-                  <AccessTime /> updated 4 minutes ago
+                  <AccessTime /> обновлено 4 минуты назад
                 </div>
               </CardFooter>
             </Card>
@@ -336,14 +337,14 @@ class Dashboard extends React.Component {
                     </Button>
                   </Tooltip>
                 </div>
-                <h4 className={classes.cardTitle}>Email Subscriptions</h4>
+                <h4 className={classes.cardTitle}>Найм сотрудников класса D</h4>
                 <p className={classes.cardCategory}>
-                  Last Campaign Performance
+                  Сводный график трех отделов
                 </p>
               </CardBody>
               <CardFooter chart>
                 <div className={classes.stats}>
-                  <AccessTime /> campaign sent 2 days ago
+                  <AccessTime /> последний набор - более недели назад
                 </div>
               </CardFooter>
             </Card>
@@ -382,14 +383,14 @@ class Dashboard extends React.Component {
                     </Button>
                   </Tooltip>
                 </div>
-                <h4 className={classes.cardTitle}>Completed Tasks</h4>
+                <h4 className={classes.cardTitle}>Завершено испытаний</h4>
                 <p className={classes.cardCategory}>
-                  Last Campaign Performance
+                  Испытания по протоколу MEM-00017
                 </p>
               </CardBody>
               <CardFooter chart>
                 <div className={classes.stats}>
-                  <AccessTime /> campaign sent 2 days ago
+                  <AccessTime /> последнее обновление - 2 дня назад
                 </div>
               </CardFooter>
             </Card>
@@ -440,21 +441,22 @@ class Dashboard extends React.Component {
                 </div>
                 <h4 className={classes.cardProductTitle}>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    Cozy 5 Stars Apartment
+                    SCP-002 - «Живая» комната
                   </a>
                 </h4>
                 <p className={classes.cardProductDesciprion}>
-                  The place is close to Barceloneta Beach and bus stop just 2
-                  min by walk and near to "Naviglio" where you can enjoy the
-                  main night life in Barcelona.
+                  SCP-002 напоминает мясистую опухоль объёмом примерно 60 м³. На
+                  одной из сторон находится железный люк, который ведёт внутрь
+                  объекта. Интерьер представляет собой стандартную дешёвую
+                  комнату небольших размеров.
                 </p>
               </CardBody>
               <CardFooter product>
                 <div className={classes.price}>
-                  <h4>$899/night</h4>
+                  <h4>Класс объекта: Евклид</h4>
                 </div>
                 <div className={`${classes.stats} ${classes.productStats}`}>
-                  <Place /> Barcelona, Spain
+                  <Place /> Зона ST-02334
                 </div>
               </CardFooter>
             </Card>
@@ -501,21 +503,21 @@ class Dashboard extends React.Component {
                 </div>
                 <h4 className={classes.cardProductTitle}>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    Office Studio
+                    SCP-003 - Биологическая материнская плата
                   </a>
                 </h4>
                 <p className={classes.cardProductDesciprion}>
-                  The place is close to Metro Station and bus stop just 2 min by
-                  walk and near to "Naviglio" where you can enjoy the night life
-                  in London, UK.
+                  SCP-003 состоит из двух взаимосвязанных объектов различного
+                  происхождения, которые далее обозначаются как SCP-003-1 и
+                  SCP-003-2.
                 </p>
               </CardBody>
               <CardFooter product>
                 <div className={classes.price}>
-                  <h4>$1.119/night</h4>
+                  <h4>Класс объекта: Евклид</h4>
                 </div>
                 <div className={`${classes.stats} ${classes.productStats}`}>
-                  <Place /> London, UK
+                  <Place /> Зона SD-200301
                 </div>
               </CardFooter>
             </Card>
@@ -562,21 +564,21 @@ class Dashboard extends React.Component {
                 </div>
                 <h4 className={classes.cardProductTitle}>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    Beautiful Castle
+                    SCP-173 - Скульптура
                   </a>
                 </h4>
                 <p className={classes.cardProductDesciprion}>
-                  The place is close to Metro Station and bus stop just 2 min by
-                  walk and near to "Naviglio" where you can enjoy the main night
-                  life in Milan.
+                  Привезён в Зону 19 в 1993. Происхождение всё ещё неизвестно.
+                  Изготовлен из бетона и арматуры со следами аэрозольной краски
+                  марки Krylon. SCP-173 одушевлён и крайне враждебен.
                 </p>
               </CardBody>
               <CardFooter product>
                 <div className={classes.price}>
-                  <h4>$459/night</h4>
+                  <h4>Класс объекта: Евклид</h4>
                 </div>
                 <div className={`${classes.stats} ${classes.productStats}`}>
-                  <Place /> Milan, Italy
+                  <Place /> Зона SD-200301
                 </div>
               </CardFooter>
             </Card>

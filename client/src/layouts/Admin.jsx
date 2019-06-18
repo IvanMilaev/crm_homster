@@ -20,7 +20,7 @@ import routes from "routes/routes.js";
 import appStyle from "assets/jss/material-dashboard-pro-react/layouts/adminStyle.jsx";
 
 import image from "assets/img/sidebar-2.jpg";
-import logoWhite from "assets/img/logo-white.svg";
+import logoWhite from "assets/img/scplogo.png";
 import logoBlue from "assets/img/logo.svg";
 
 import "assets/css/chartist.css";
@@ -145,7 +145,7 @@ class Dashboard extends React.Component {
       <div className={classes.wrapper}>
         <Sidebar
           routes={routes}
-          logoText={"SECRET AGENCY"}
+          logoText={"S.C.P Foundation"}
           logo={this.state.bgColor === "white" ? logoBlue : logoWhite}
           image={this.state.image}
           handleDrawerToggle={this.handleDrawerToggle}

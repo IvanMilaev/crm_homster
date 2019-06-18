@@ -12,6 +12,11 @@ import Paper from "@material-ui/core/Paper";
 import Grow from "@material-ui/core/Grow";
 import Hidden from "@material-ui/core/Hidden";
 import Popper from "@material-ui/core/Popper";
+//import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
 
 // @material-ui/icons
 import Person from "@material-ui/icons/Person";
@@ -22,22 +27,35 @@ import Search from "@material-ui/icons/Search";
 // core components
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import Dialog from "components/Dialog/Dialog.jsx";
+import SearchInput from "components/Search/Search.jsx";
 
 import adminNavbarLinksStyle from "assets/jss/material-dashboard-pro-react/components/adminNavbarLinksStyle.jsx";
 
 class HeaderLinks extends React.Component {
   state = {
-    open: false
+    open: false,
+    openSearch: false
   };
+
   handleClick = () => {
     this.setState({ open: !this.state.open });
   };
   handleClose = () => {
     this.setState({ open: false });
   };
+
+  handleOpenSearch = () => {
+    this.setState({ openSearch: true });
+  };
+
+  handleCloseSearch = () => {
+    this.setState({ openSearch: false });
+  };
+
   render() {
     const { classes, rtlActive } = this.props;
-    const { open } = this.state;
+    const { open, openSearch } = this.state;
     const searchButton =
       classes.top +
       " " +
@@ -59,30 +77,29 @@ class HeaderLinks extends React.Component {
     });
     return (
       <div className={wrapper}>
-        <CustomInput
-          rtlActive={rtlActive}
-          formControlProps={{
-            className: classes.top + " " + classes.search
-          }}
-          inputProps={{
-            placeholder: rtlActive ? "بحث" : "Search",
-            inputProps: {
-              "aria-label": rtlActive ? "بحث" : "Search",
-              className: classes.searchInput
-            }
-          }}
-        />
         <Button
-          color="white"
+          color="grey"
           aria-label="edit"
           justIcon
           round
           className={searchButton}
+          onClick={this.handleOpenSearch}
         >
           <Search
             className={classes.headerLinksSvg + " " + classes.searchIcon}
           />
         </Button>
+        <Dialog
+          fullWidth={true}
+          maxWidth={"xs"}
+          open={openSearch}
+          onClose={this.handleCloseSearch}
+          aria-labelledby="max-width-dialog-title"
+        >
+          <DialogContent>
+            <SearchInput />
+          </DialogContent>
+        </Dialog>
         <Button
           color="transparent"
           simple
